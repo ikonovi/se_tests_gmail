@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Gmail Test Suite" preserve-order="false">
+    <test name="Script 1: SignIn" enabled="false">
+        <classes>
+            <class name="ik.tests.Script1Test"/>
+        </classes>
+    </test>
+    <test name="Script 2: SignOut" enabled="false">
+        <classes>
+            <class name="ik.tests.Script2Test"/>
+        </classes>
+    </test>
+    <test name="Script 3: " enabled="false">
+        <classes>
+            <class name="ik.tests.Script3Test"/>
+        </classes>
+    </test>
+</suite>
