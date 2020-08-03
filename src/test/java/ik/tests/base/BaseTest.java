@@ -1,4 +1,4 @@
-package ik.tests;
+package ik.tests.base;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;

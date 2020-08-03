@@ -1,4 +1,4 @@
-package ik.se.gmail.data;
+package ik.se.gmail.model;
 
 public class UserAccount {
     public String emailAddress;

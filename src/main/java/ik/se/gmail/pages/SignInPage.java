@@ -1,10 +1,10 @@
-package ik.se.gmail.page;
+package ik.se.gmail.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static ik.se.gmail.page.element.PageElement.*;
+import static ik.se.gmail.pages.element.PageElement.*;
 
 public class SignInPage extends AbstractPage {
 

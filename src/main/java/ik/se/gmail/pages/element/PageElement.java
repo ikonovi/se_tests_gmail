@@ -1,4 +1,4 @@
-package ik.se.gmail.page.element;
+package ik.se.gmail.pages.element;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;

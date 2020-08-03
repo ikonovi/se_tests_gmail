@@ -1,7 +1,8 @@
 package ik.tests;
 
-import ik.se.gmail.page.InboxPage;
-import ik.se.gmail.page.SignInChooseAccountPage;
+import ik.se.gmail.pages.InboxPage;
+import ik.se.gmail.pages.SignInChooseAccountPage;
+import ik.tests.base.BaseTest;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,8 +10,8 @@ import org.testng.annotations.Test;
 
 import static ik.config.TestData.account;
 import static ik.config.TestData.message;
-import static ik.se.gmail.page.element.PageElement.inboxPageUrl;
-import static ik.se.gmail.page.element.PageElement.signInChooseAccountUrl;
+import static ik.se.gmail.pages.element.PageElement.inboxPageUrl;
+import static ik.se.gmail.pages.element.PageElement.signInChooseAccountUrl;
 import static org.testng.Assert.assertTrue;
 
 /**

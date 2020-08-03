@@ -1,10 +1,11 @@
 package ik.tests;
 
-import ik.se.gmail.page.InboxPage;
-import ik.se.gmail.page.SignInChooseAccountPage;
+import ik.se.gmail.pages.InboxPage;
+import ik.se.gmail.pages.SignInChooseAccountPage;
+import ik.tests.base.BaseTest;
 import org.testng.annotations.Test;
 
-import static ik.se.gmail.page.element.PageElement.*;
+import static ik.se.gmail.pages.element.PageElement.*;
 import static org.testng.Assert.assertTrue;
 
 /**

@@ -2,7 +2,7 @@ package ik.config;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
-import ik.se.gmail.page.element.PageElement;
+import ik.se.gmail.pages.element.PageElement;
 
 import java.io.FileInputStream;
 import java.io.IOException;

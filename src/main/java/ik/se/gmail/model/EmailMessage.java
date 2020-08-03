@@ -1,4 +1,4 @@
-package ik.se.gmail.data;
+package ik.se.gmail.model;
 
 import java.util.List;
 

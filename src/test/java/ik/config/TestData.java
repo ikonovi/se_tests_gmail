@@ -2,8 +2,8 @@ package ik.config;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import ik.se.gmail.data.EmailMessage;
-import ik.se.gmail.data.UserAccount;
+import ik.se.gmail.model.EmailMessage;
+import ik.se.gmail.model.UserAccount;
 
 import java.util.ArrayList;
 import java.util.List;

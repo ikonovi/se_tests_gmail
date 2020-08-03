@@ -1,7 +1,8 @@
 package ik.tests;
 
-import ik.se.gmail.page.InboxPage;
-import ik.se.gmail.page.SignInPage;
+import ik.se.gmail.pages.InboxPage;
+import ik.se.gmail.pages.SignInPage;
+import ik.tests.base.BaseTest;
 import org.testng.annotations.Test;
 
 import static ik.config.TestData.account;

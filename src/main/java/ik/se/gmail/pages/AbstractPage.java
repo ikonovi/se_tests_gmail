@@ -1,4 +1,4 @@
-package ik.se.gmail.page;
+package ik.se.gmail.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static ik.se.gmail.page.element.PageElement.waitTimeOutInSeconds;
+import static ik.se.gmail.pages.element.PageElement.waitTimeOutInSeconds;
 
 public abstract class AbstractPage {
 
