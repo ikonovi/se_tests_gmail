@@ -2,4 +2,4 @@
 
 Selenium(Java)+TestNG+Guice
 
-Build status: ![Java CI with Maven](https://github.com/ikonovi/se_tests_gmail/workflows/Java%20CI%20with%20Maven/badge.svg?branch=develop)
+![Java CI with Maven](https://github.com/ikonovi/se_tests_gmail/workflows/Java%20CI%20with%20Maven/badge.svg?branch=develop)
