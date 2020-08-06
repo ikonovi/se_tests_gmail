@@ -1,10 +1,9 @@
 package ik.se.gmail.model;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.StringJoiner;
+import java.util.*;
+import java.util.stream.Collectors;
 
-public class EmailMessage implements Comparable<EmailMessage> {
+public class EmailMessage implements Comparable<EmailMessage>, Cloneable {
 
     public List<String> recipientEmails;
     public String subject;
@@ -34,6 +33,18 @@ public class EmailMessage implements Comparable<EmailMessage> {
     @Override
     public int hashCode() {
         return Objects.hash(recipientEmails, subject, body);
+    }
+
+    @Override
+    public EmailMessage clone() {
+        EmailMessage clone = null;
+        try {
+            clone = (EmailMessage) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.recipientEmails = this.recipientEmails.stream().map(s -> s.intern()).collect(Collectors.toList());
+        return clone;
     }
 
     @Override

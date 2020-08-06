@@ -23,6 +23,8 @@
         <classes>
             <class name="ik.tests.comparable.ComparableUserAccountTest"/>
             <class name="ik.tests.comparable.ComparableEmailMessageTest"/>
+            <class name="ik.tests.cloneable.CloneableUserAccountTest"/>
+            <class name="ik.tests.cloneable.CloneableEmailMessageTest"/>
         </classes>
     </test>
 </suite>

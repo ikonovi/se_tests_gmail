@@ -34,6 +34,17 @@ public class UserAccount implements Comparable<UserAccount>, Cloneable {
     }
 
     @Override
+    public UserAccount clone() {
+        UserAccount clone = null;
+        try {
+            clone = (UserAccount) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        return clone;
+    }
+
+    @Override
     public String toString() {
         return new StringJoiner(", ", UserAccount.class.getSimpleName() + "[", "]")
                 .add("emailAddress='" + emailAddress + "'")
