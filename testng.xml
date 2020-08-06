@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Gmail Test Suite" preserve-order="false">
+<suite name="Gmail Test Suite" preserve-order="true">
+    <!-- UI Tests -->
     <test name="Script 1: SignIn" enabled="false">
         <classes>
             <class name="ik.tests.Script1Test"/>
@@ -15,6 +16,13 @@
     <test name="Script 3: " enabled="false">
         <classes>
             <class name="ik.tests.Script3Test"/>
+        </classes>
+    </test>
+    <!-- Unit Tests -->
+    <test name="compareTo() Tests" enabled="true">
+        <classes>
+            <class name="ik.tests.comparable.ComparableUserAccountTest"/>
+            <class name="ik.tests.comparable.ComparableEmailMessageTest"/>
         </classes>
     </test>
 </suite>
