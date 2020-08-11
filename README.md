@@ -1,4 +1,4 @@
-### Exampe of automated tests
+### Example of automated tests
 
 Selenium(Java)+TestNG+Guice
 
