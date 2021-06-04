@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 import static ik.se.gmail.pages.element.PageElement.waitTimeOutInSeconds;
-import static java.time.Duration.ofSeconds;
 
 public abstract class AbstractPage {
 
@@ -20,17 +19,17 @@ public abstract class AbstractPage {
     public abstract boolean isLoaded();
 
     public boolean waitTitleContains(WebDriver driver, String substring) {
-        return new WebDriverWait(driver, timeoutDuration.getSeconds()).until(
-                ExpectedConditions.titleContains(substring));
+        return new WebDriverWait(driver, timeoutDuration.getSeconds())
+                .until(ExpectedConditions.titleContains(substring));
     }
 
     public boolean waitUrlContains(WebDriver driver, String substring) {
-        return new WebDriverWait(driver, timeoutDuration.getSeconds()).until(
-                ExpectedConditions.urlContains(substring));
+        return new WebDriverWait(driver, timeoutDuration.getSeconds())
+                .until(ExpectedConditions.urlContains(substring));
     }
 
     public WebElement waitToBeClickable(WebDriver driver, By by) {
-        return new WebDriverWait(driver, timeoutDuration.getSeconds()).until(
-                ExpectedConditions.elementToBeClickable(by));
+        return new WebDriverWait(driver, timeoutDuration.getSeconds())
+                .until(ExpectedConditions.elementToBeClickable(by));
     }
 }
