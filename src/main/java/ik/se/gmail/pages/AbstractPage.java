@@ -6,26 +6,31 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 import static ik.se.gmail.pages.element.PageElement.waitTimeOutInSeconds;
+import static java.time.Duration.ofSeconds;
 
 public abstract class AbstractPage {
 
-    private final int timeout = Integer.parseInt(waitTimeOutInSeconds);
+    private final Duration timeoutDuration = Duration.ofSeconds(
+            Integer.parseInt(waitTimeOutInSeconds)
+    );
 
     public abstract boolean isLoaded();
 
     public boolean waitTitleContains(WebDriver driver, String substring) {
-        return new WebDriverWait(driver, timeout).until(
+        return new WebDriverWait(driver, timeoutDuration.getSeconds()).until(
                 ExpectedConditions.titleContains(substring));
     }
 
     public boolean waitUrlContains(WebDriver driver, String substring) {
-        return new WebDriverWait(driver, timeout).until(
+        return new WebDriverWait(driver, timeoutDuration.getSeconds()).until(
                 ExpectedConditions.urlContains(substring));
     }
 
     public WebElement waitToBeClickable(WebDriver driver, By by) {
-        return new WebDriverWait(driver, timeout).until(
+        return new WebDriverWait(driver, timeoutDuration.getSeconds()).until(
                 ExpectedConditions.elementToBeClickable(by));
     }
 }
